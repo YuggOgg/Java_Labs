@@ -1,0 +1,194 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #979089;
+}
+
+.game-window {
+    width: 800px;
+    height: 800px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #BCAE9F;
+}
+
+.keyBoard-window {
+    width: 500px;
+    height: 800px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #BCAE9F;
+    margin-left: 12px;
+}
+
+.otherButton-block {
+    width: 100%;
+    height: 25%;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upArrow-block {
+    width: 100%;
+    height: 25%;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftRightArrow-block {
+    width: 100%;
+    height: 25%;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downArrow-block {
+    width: 100%;
+    height: 25%;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #979089;
+    border: none;
+    color: white;
+
+    width: 125px;
+    height: 125px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 70px;
+    cursor: pointer;
+
+    border-radius: 15px;
+}
+
+.buttonLeft {
+    background-color: #979089;
+    border: none;
+    color: white;
+
+    width: 125px;
+    height: 125px;
+
+    text-align: center;
+    text-decoration: none;
+    text-color: #797063; /**/
+    display: inline-block;
+    font-size: 70px;
+    margin-left: 130px;
+    cursor: pointer;
+
+    border-radius: 15px;
+}
+
+
+.array-item {
+    width: 175px;
+    height: 175px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    line-height: 50px;
+    float: left;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+
+/*L #FFF6E6*/
+/*D #797063*/
+
+.cell-0 {
+    background-color: #D8CEC4 !important;
+    color: #D8CEC4;
+    font-size: 0px;
+}
+
+.cell-2 {
+    background-color: #F0E4D9 !important;
+    color: #797063;
+    font-size: 100px;
+}
+
+.cell-4 {
+    background-color: #EEE1C7 !important;
+    color: #797063;
+    font-size: 100px;
+}
+.cell-8 {
+    background-color: #FDAF70 !important;
+    color: #FFF6E6;
+    font-size: 100px;
+}
+.cell-16 {
+    background-color: #FF8F56 !important;
+    color: #FFF6E6;
+    font-size: 100px;
+}
+.cell-32 {
+    background-color: #FF7050 !important;
+    color: #FFF6E6;
+    font-size: 100px;
+}
+
+.cell-64 {
+    background-color: #FF4612 !important;
+    color: #FFF6E6;
+    font-size: 100px;
+}
+
+.cell-128 {
+    background-color: #F1D268 !important;
+    color: #797063;
+    font-size: 90px;
+}
+
+.cell-256 {
+    background-color: #F1D056 !important;
+    color: #797063;
+    font-size: 90px;
+}
+
+.cell-512 {
+    background-color: #F0CB41 !important;
+    color: #797063;
+    font-size: 90px;
+}
+
+.cell-1024 {
+    background-color: #F2C927 !important;
+    color: #797063;
+    font-size: 80px;
+}
+
+.cell-2048 {
+    background-color: #F3C500 !important;
+    color: #797063;
+    font-size: 80px;
+}

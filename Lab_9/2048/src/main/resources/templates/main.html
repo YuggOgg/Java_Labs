@@ -1,0 +1,54 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>2048</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+
+<body>
+
+    <div class="game-window">
+        <div th:each="row : ${array}">
+            <div th:each="item : ${row}" class="array-item" th:classappend="'cell-' + ${item}" th:text="${item}"></div>
+
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+
+    <div class="keyBoard-window">
+        <div class = "otherButton-block">
+            <form action="/Restart" method="post">
+                <button type="submit" class="button">↺</button>
+            </form>
+        </div>
+
+        <div class = "upArrow-block">
+            <form action="/MoveUp" method="post">
+                <button type="submit" class="button">↑</button>
+            </form>
+        </div>
+
+        <div class = "leftRightArrow-block">
+            <form action="/MoveRight" method="post">
+                <button type="submit" class="button">←</button>
+            </form>
+
+            <form action="/MoveLeft" method="post">
+                <button type="submit" class="buttonLeft">→</button>
+            </form>
+        </div>
+
+        <div class = "downArrow-block">
+            <form action="/MoveDown" method="post">
+                <button type="submit" class="button">↓</button>
+            </form>
+        </div>
+    </div>
+
+    <!--<p th:text = "'Hi,' + ${message}"></p>-->
+</body>
+
+</html>
